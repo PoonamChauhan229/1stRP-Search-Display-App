@@ -8,7 +8,7 @@ export default function ProductDispplay(props) {
             props.proddata.map((item)=>(
                 <div key={item.id}>
                 <div class="card m-3" style={{width: "18rem"}}>
-                <img src={item.image}class="card-img-top" alt="..."/>
+                <img src={item.image} class="card-img-top" alt="..."style={{height:"15rem"}}/>
                 <div class="card-body">
                     <h5 class="card-title">{item.name}</h5>
                     <p class="card-text">{item.description}</p>
