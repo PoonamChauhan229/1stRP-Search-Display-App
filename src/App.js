@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header'
 import ProductDispplay from './components/ProductDispplay'
 import JSON from './components/db.json'
+import Footer from './components/Footer';
 
 export default class App extends Component {
   constructor(){
@@ -28,6 +29,7 @@ export default class App extends Component {
         
         <Header userInput={(data)=>{this.filteredProduct(data)}}/>
         <ProductDispplay proddata={this.state.filteredData}/>
+        <Footer year="2022" month="September"/>
       </div>
     )
   }
