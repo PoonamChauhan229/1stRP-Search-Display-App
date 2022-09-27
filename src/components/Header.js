@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 export default class Header extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         this.state={
             title:"Display&Search-App",
@@ -15,6 +15,7 @@ export default class Header extends Component {
         this.setState({
             keyword:event.target.value?event.target.value:"Your text goes here!!!!"
         })
+        this.props.userInput(event.target.value)
     }
 
   render() {
